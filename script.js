@@ -37,7 +37,7 @@ app.put("/usuarios/:id", (req, res) => {
         return res.status(404).json({erro: "Usuário não encontrado"})
     }
 
-    usuario.nome = req.body.name
+    usuario.nome = req.body.nome
     res.json(usuario)
 })
 
